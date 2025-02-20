@@ -1,0 +1,26 @@
+CREATE DATABASE db_inventory_refa
+
+CREATE TABLE jenis(
+ id_jenis varchar PRIMARY KEY,
+ nama_jenis varchar)
+
+CREATE TABLE barang (
+ id_barang int PRIMARY KEY,
+ nama_barang varchar (50),
+ id_jenis varchar(50),
+ harga int,
+ stok int)
+
+INSERT INTO jenis VALUES
+('B001','motor'),
+('B002','motor'),
+('B003','motor'),
+('B004','motor'),
+('B005','motor')
+
+INSERT INTO barang VALUES
+(1,'xrideapip','B001',3000000,1),
+(2,'miokuning','B002',6000000,1),
+(3,'nmak','B003',8000000,1),
+(4,'beatmerah','B004',5500000,1),
+(5,'beatputih','B005',5500000,1)
