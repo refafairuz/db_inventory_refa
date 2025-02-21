@@ -15,7 +15,7 @@
     $query=mysqli_query($conn, "SELECT * FROM jenis WHERE id_jenis='$id_jenis'");
     $result=mysqli_fetch_array($query);
     ?>
-    <form action="proses_edit.php?id_jenis=<?php echo $result['id_jenis']?>" method="POST">
+    <form action="proses edit.php?id_jenis=<?php echo $result['id_jenis']?>" method="POST">
 <br>
     <label for="exampleInputEmail1" class="form-label">id jenis</label>
     <input type="text" value="<?php echo $result['id_jenis']?>" name="id_jenis" class="form-control" class="form-text"id="exampleInputEmail1" aria-describedby="emailHelp">

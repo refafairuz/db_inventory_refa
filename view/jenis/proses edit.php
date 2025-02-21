@@ -9,7 +9,7 @@ $query = mysqli_query($conn,"UPDATE jenis SET nama_jenis='$nama_jenis' WHERE id_
 
 if($query){
     echo "<script>alert('edit berhasil')</script>";
-    echo "<script>window.location.href=index.php</script>";
+    echo "<script>window.location.href='index.php'</script>";
 }else{
     echo "<script>alert('edit gagal')</script>";
     echo "<script>window.location.href=tambah.php</script>";

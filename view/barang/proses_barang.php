@@ -13,7 +13,7 @@ $query = mysqli_query($conn,"UPDATE barang SET nama_barang='$nama_barang'
 
 if($query){
     echo "<script>alert('tambah berhasil')</script>";
-    echo "<script>window.location.href=index.php</script>";
+    echo "<script>window.location.href='index.php'</script>";
 }else{
     echo "<script>alert('tambah gagal')</script>";
     echo "<script>window.location.href=tambah.php</script>";
